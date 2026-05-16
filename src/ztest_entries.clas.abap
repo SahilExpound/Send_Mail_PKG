@@ -1,0 +1,23 @@
+CLASS ztest_entries DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+
+  INTERFACES if_oo_adt_classrun.
+
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS ZTEST_ENTRIES IMPLEMENTATION.
+
+
+mETHOD if_oo_adt_classrun~main.
+deleTE from ztb_bal_conf whERE customer IN ( 'NAGKI001', 'NAGPT03','NAGIS01' ).
+COMMIT WORK.
+enDMETHOD.
+ENDCLASS.

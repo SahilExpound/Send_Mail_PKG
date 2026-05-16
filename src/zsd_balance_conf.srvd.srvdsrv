@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definatrion for Balance Conf'
+define service ZSD_BALANCE_CONF {
+  expose ZC_BALANCE_CONF;
+}

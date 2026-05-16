@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Balance Confirmation Letter"
+  },
+  "ui5AppDetails": {
+    "appId": "zfibalanceconf"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_3872EC0E8427CD4327FA0D30C96CC13DF4398F66_TM",
+    "semanticObject": "zfi_balance_conf",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_3872EC0E8427CD4327FA0D30C96CC13DF4398F66_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Balance Confirmation Letter",
+        "icon": "sap-icon://email-read"
+      }
+    }
+  ]
+}

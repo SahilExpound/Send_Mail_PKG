@@ -1,0 +1,27 @@
+managed implementation in class zbp_i_balance_conf unique;
+strict ( 2 );
+
+define behavior for ZI_BALANCE_CONF alias ZI_BALANCE_CONF_DOC
+with unmanaged save
+//persistent table <???>
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  action ( features : instance ) ZPRINT parameter ZI_POSTDATE result [1] $self;
+   action ( features : instance ) ZSENDMAIL result [1] $self;
+
+  update;
+
+  field ( readonly ) AccountingDocument;
+  mapping for ztb_bal_conf
+
+    {
+      AccountingDocument  = accountingdocument;
+      CompanyCode        = companycode;
+      Customer           = customer;
+      PostingDate         = postingdate;
+      base64             = base64;
+      m_ind              = m_ind;
+    }
+}

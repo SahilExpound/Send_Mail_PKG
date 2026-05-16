@@ -1,0 +1,13 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_BALANCE_CONF
+{
+  use update;
+
+  use action ZPRINT;
+
+
+   use action ZSENDMAIL;
+
+}
